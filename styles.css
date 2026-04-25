@@ -1,0 +1,149 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f52bc2, #452af5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .player-names input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .player-names button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .player-names button:hover {
+    background-color: #444;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+  }
+  
+  .status {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .restart-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .restart-btn:hover {
+    background-color: #444;
+  }
+  
+  .result-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .result-screen.hidden {
+    display: none;
+  }
+  
+  .result-message {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .streak-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .new-game-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .new-game-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .streak-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .streak-info.hidden {
+    display: none;
+  }
+  
+  .streak-info p {
+    margin: 5px 0;
+  }
+  
